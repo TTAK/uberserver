@@ -370,7 +370,7 @@ class DataHandler:
 
 	# the sourceClient is only sent for SAY*, and RING commands
 	def broadcast_battle(self, msg, battle_id, ignore=[], sourceClient=None):
-		if type(ignore) in (str, unicode): ignore = [ignore]
+		if type(ignore) in (bytes, str): ignore = [ignore]
 		if battle_id in self.battles:
 			battle = self.battles[battle_id]
 			clients = [self.clientFromSession(user) for user in battle.users]
