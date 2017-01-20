@@ -24,3 +24,7 @@ setup MySQL/PostgreSQL/etc.
 
 # Logs
 - `$PWD/server.log`
+
+# Protocol documentation
+
+You can find the Spring lobby protocol documentation here https://springrts.com/dl/LobbyProtocol/ 
